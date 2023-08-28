@@ -21,18 +21,18 @@ function showTime() {
 
     function changeImage() {
         if( toggleCheckbox.checked && ((hours > 17 && hours <= 23) || (hours >=0 && hours <5) )) {
-            visualAidContainer.style.background = "url(https://github.com/abitstupid/clock/blob/main/images/night.jpg) var(--secondary-color)";
+            visualAidContainer.style.background = "url(../images/night.jpg) var(--secondary-color)";
             visualAidContainer.style.backgroundSize = "cover";
             visualAidContainer.style.backgroundPosition = "center";
             visualAidContainer.style.backgroundRepeat = "repeat";
     
         } else if (!toggleCheckbox.checked && (((hours>5 && session == "PM") && (hours<=11 && session == "PM"))|| (hours>=12 && session == "AM") && (hours<=5 && session == "AM"))){
-            visualAidContainer.style.background = "url(https://github.com/abitstupid/clock/blob/main/images/night.jpg) var(--secondary-color)";
+            visualAidContainer.style.background = "url(../images/night.jpg) var(--secondary-color)";
             visualAidContainer.style.backgroundSize = "cover";
             visualAidContainer.style.backgroundPosition = "center";
             visualAidContainer.style.backgroundRepeat = "repeat";
         } else {
-            visualAidContainer.style.background = "url(https://github.com/abitstupid/clock/blob/main/images/day.jpg) var(--secondary-color)";
+            visualAidContainer.style.background = "url(../images/day  .jpg) var(--secondary-color)";
             visualAidContainer.style.backgroundSize = "cover";
             visualAidContainer.style.backgroundPosition = "center";
             visualAidContainer.style.backgroundRepeat = "repeat";
@@ -43,26 +43,26 @@ function showTime() {
         if (document.body.scrollWidth <781) {
             // console.log("windth is less that 781");
             if( toggleCheckbox.checked && ((hours > 17 && hours <= 23) || (hours >=0 && hours <5) )) {
-                body.style.background = "url(https://github.com/abitstupid/clock/blob/main/images/night.jpg) var(--secondary-color)";
+                body.style.background = "url(../images/night.jpg) var(--secondary-color)";
                 body.style.backgroundSize = "cover";
                 body.style.backgroundPosition = "center";
                 body.style.backgroundRepeat = "repeat";
             
             } else if (!toggleCheckbox.checked && (((hours>5 && session == "PM") && (hours<=11 && session == "PM"))|| (hours>=12 && session == "AM") && (hours<=5 && session == "AM"))){
-                body.style.background = "url(https://github.com/abitstupid/clock/blob/main/images/night.jpg) var(--primary-color)";
+                body.style.background = "url(../images/night.jpg) var(--primary-color)";
                 body.style.backgroundSize = "cover";
                 body.style.backgroundRepeat = "repeat";
                 body.style.backgroundPosition = "center";
             } else {
-                body.style.background = "url(https://github.com/abitstupid/clock/blob/main/images/day-mobile.jpg) var(--primary-color)";
+                body.style.background = "url(../images/day-mobile.jpg) var(--primary-color)";
                 body.style.backgroundSize = "cover";
                 body.style.backgroundRepeat = "repeat";
                 body.style.backgroundPosition = "center";
             }
-            visualAidContainer.style.background = "none";
+        visualAidContainer.style.background = "none";
 
     } else {
-            body.style.background = "url(https://github.com/abitstupid/clock/blob/main/images/bg-clock.jpg) var(--primary-color)";
+            body.style.background = "url(../images/bg-clock.jpg) var(--primary-color)";
             body.style.backgroundSize = "cover";
             body.style.backgroundRepeat = "repeat";
             body.style.backgroundPosition = "center";
