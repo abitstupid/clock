@@ -297,6 +297,8 @@ p {
         grid-template-columns: 1fr; /* Single column */
         grid-template-rows: 1fr 4fr 1fr; /* Three rows with specified heights */
         gap: 10px;
+
+        min-height: 400px;
     }
     
     .item1 {
@@ -327,7 +329,7 @@ p {
 
     /* item 1 */
     #format-switch-container {
-        margin-top: 0;
+        margin-top: 0.8rem;
         width: 7rem;
         height: 50px;
     
