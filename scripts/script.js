@@ -10,7 +10,7 @@ function showTime() {
     const toggleCheckbox = document.querySelector(".toggle-checkbox");
     let visualAidContainer = document.getElementById("visual-aid-container");
     let loremText = document.getElementById("lorem-text");
-
+    const clockTitle = document.getElementById("clock-title");
 
     
     function doubleDigits() {
@@ -25,12 +25,15 @@ function showTime() {
             visualAidContainer.style.backgroundSize = "cover";
             visualAidContainer.style.backgroundPosition = "center";
             visualAidContainer.style.backgroundRepeat = "repeat";
+            clockTitle.style.colo = "var(--secondary-color)";
     
         } else if (!toggleCheckbox.checked && (((hours>5 && session == "PM") && (hours<=11 && session == "PM"))|| (hours>=12 && session == "AM") && (hours<=5 && session == "AM"))){
             visualAidContainer.style.background = "url(../images/night.jpg) var(--secondary-color)";
             visualAidContainer.style.backgroundSize = "cover";
             visualAidContainer.style.backgroundPosition = "center";
             visualAidContainer.style.backgroundRepeat = "repeat";
+            clockTitle.style.colo = "var(--secondary-color)";
+
         } else {
             visualAidContainer.style.background = "url(../images/day  .jpg) var(--secondary-color)";
             visualAidContainer.style.backgroundSize = "cover";
