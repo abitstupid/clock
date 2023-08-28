@@ -1,0 +1,24 @@
+:root {
+    --primary-color: #02122C;
+    --secondary-color: #E0D9B1;
+}
+
+@font-face {
+    font-family: "Offbit Bold";
+    src: url("fonts/offbit_dotbold.ttf");
+}
+
+@font-face {
+    font-family: "Cascadia Code";
+    src: url("fonts/cascadia.ttf");
+}
+
+@font-face {
+    font-family: "Shrimp";
+    src: url("fonts/shrimp.ttf");
+}
+
+@font-face {
+    font-family: "Neo Tetra";
+    src: url("fonts/neo-tetra.otf");
+}
